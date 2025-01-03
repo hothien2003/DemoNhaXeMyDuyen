@@ -1,14 +1,10 @@
-
-
-.ticket-search {
-    padding: 40px 0;
-}
-
-.ticket-search h1 {
-    color: var(--primary-color);
-    font-size: 24px;
+.section-title-h1{
+    margin-bottom: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 .subtitle {
@@ -46,6 +42,7 @@
     padding: 12px;
     border: none;
     border-radius: 4px;
+    background-color: #fff;
 }
 
 .search-btn {
@@ -186,7 +183,7 @@
 
         /* Hero Section */
         .hero {
-            background-image: url('/img/banner1.png');
+            background-image: url('/assets/img/banner1.png');
             background-size: cover;
             padding: 350px 0;
             position: relative;
@@ -289,7 +286,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #F9F6EF;
         }
         .route-container {
             max-width: 1200px;
@@ -541,6 +538,10 @@
     z-index: 1;
 }
 
+.app-preview img:hover {
+    transform: translateY(-10px);
+}
+
 .app-preview2 img {
     max-width: 600px;
     height: 500px;
@@ -549,6 +550,11 @@
     margin-bottom: 0px;
     margin-left: 2108px;
     right: 100px;
+}
+
+.app-preview2 img:hover {
+    transform: translateY(-10px);
+    /* background-image: -webkit-linear-gradient(var(--primary-color), var(--text-color)); */
 }
 
 @media (max-width: 768px) {
@@ -722,6 +728,10 @@
     border-radius: 8px;
 }
 
+.gallery-item img:hover{
+    transform: translateY(10px);
+}
+
 @keyframes scrollGallery {
     0% {
         transform: translateX(0);
@@ -767,6 +777,40 @@
 .hotline-image img {
     width: 100%;
     max-width: 400px;
+    animation: shake 3s ease-in-out 3s infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(7deg);
+    }
+    to {
+        transform: rotate(-7deg);
+        transform-origin: center center;
+    }
+}
+
+/* Tạo hiệu ứng lặp với khoảng dừng */
+.hotline-image img {
+    animation: shake-pause 2.6s infinite; /* 2s lắc (6 lần x 0.3s) + 0.6s dừng */
+}
+
+@keyframes shake-pause {
+    0%, 90% {
+        transform: rotate(0); /* Dừng không lắc */
+    }
+    10%, 20% {
+        transform: rotate(7deg);
+    }
+    30%, 40% {
+        transform: rotate(-7deg);
+    }
+    50%, 60% {
+        transform: rotate(7deg);
+    }
+    70%, 80% {
+        transform: rotate(-7deg);
+    }
 }
 
 .hotline-info {
@@ -798,6 +842,16 @@
 .hotline-item i {
     color: var(--primary-color);
     font-size: 20px;
+    animation: scaling 2s linear infinite;
+}
+
+@keyframes scaling{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .hotline-item a {
@@ -809,6 +863,7 @@
 /* Latest News Section */
 .latest-news {
     padding: 15px 0;
+    background-color: #fff;
 }
 
 .news-grid {
@@ -848,12 +903,16 @@
     color: #666;
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .news-card1 {
     width: 700px;
     height: 600px;
+}
+
+.news-card1:hover {
+    transform: translateY(-3px);
 }
 
 .news-card {
@@ -863,6 +922,11 @@
     gap: 30px;
     justify-content: end;
     height: 200px;
+    width: 500px;
+}
+
+.news-card:hover{
+    transform: translateY(-3px);
 }
 
 .news-date {
@@ -878,7 +942,11 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 1px;
+}
+
+.read-more:hover{
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {

@@ -400,6 +400,10 @@ footer::before {
     margin-bottom: 8px;
 }
 
+.company-info p:hover{
+    transform: translateX(-3px);
+}
+
 .contact-info {
     margin: 25px 0;
 }
@@ -426,6 +430,10 @@ footer::before {
     text-decoration: none;
 }
 
+.social-btn:hover{
+    transform: translateY(-3px);
+}
+
 .footer-col h3 {
     font-size: 18px;
     margin-bottom: 20px;
@@ -439,6 +447,10 @@ footer::before {
 
 .footer-col ul li {
     margin-bottom: 12px;
+}
+
+.footer-col ul li:hover {
+    transform: translateX(-3px);
 }
 
 .footer-col ul li a {
