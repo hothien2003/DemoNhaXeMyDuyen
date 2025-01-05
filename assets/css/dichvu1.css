@@ -1,4 +1,16 @@
+.banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
 
+.img{
+    object-fit: cover;
+    position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+}
 
 .ticket-search {
     padding: 40px 0;
@@ -113,38 +125,10 @@
     margin-bottom: 20px;
 }
 
-.page-header {
-    position: relative;
-    height: 500px;  /* Điều chỉnh chiều cao theo ý muốn */
-    background-image: url('img/image.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 50px 0;
-}
-
-/* Thêm lớp overlay tối màu */
-.page-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Điều chỉnh độ tối */
-}
 
 .page-header .container {
     position: relative;
     z-index: 1;
-    color: white;
-}
-
-.page-title {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
     color: white;
 }
 
@@ -154,14 +138,6 @@
     color: white;
 }
 
-.breadcrumb a {
-    color: white;
-    text-decoration: none;
-}
-
-.breadcrumb span {
-    color: #ccc;
-}
 
 /* Media Queries cho các kích thước màn hình khác nhau */
 @media (max-width: 768px) {

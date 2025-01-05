@@ -341,7 +341,7 @@
             display: block;
             margin-top: 5px;
         }
-        .button {
+        .button-Datve {
             display: inline-block;
             background-color: #d32f2f;
             color: #fff;
@@ -352,8 +352,9 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-        .button:hover {
+        .button-Datve:hover {
             background-color: #b71c1c;
+            transform:translateX(-10);
         }
 
         /* Services */
@@ -497,6 +498,7 @@
 .download-buttons a {
     display: block;
     transition: transform 0.3s ease;
+    padding-bottom: 20px;
 }
 
 .download-buttons a:hover {
@@ -840,7 +842,7 @@
 }
 
 .hotline-item i {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 20px;
     animation: scaling 2s linear infinite;
 }
@@ -894,7 +896,7 @@
 
 .news-title {
     font-size: 18px;
-    color: var(--text-color);
+    color: var(--secondary-color);
     margin-bottom: 10px;
     font-weight: 600;
 }

@@ -346,6 +346,10 @@
     text-align: center;
 }
 
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
 .feature-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -386,4 +390,28 @@
     .about-images {
         margin-bottom: 2rem;
     }
+}
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 0px;
+}
+
+.img-container1{
+    width: 275px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.img-container2{
+
+}
+
+.img-container3{
+
+}
+
+.left-column{
+    width:0px;
 }
