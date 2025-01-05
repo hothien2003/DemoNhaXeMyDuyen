@@ -1,4 +1,22 @@
+/* Banner Styles */
+.banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
 
+.banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .ticket-search {
     padding: 40px 0;

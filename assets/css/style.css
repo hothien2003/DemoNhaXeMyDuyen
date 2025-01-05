@@ -306,7 +306,7 @@ header {
 }
 /* Style cho banner */
 .page-banner {
-    background-image: url('/img/image.png');
+    background-image: url('/assets/img/banner2.png');
     background-size: cover;
     background-position: center;
     height: 400px;
