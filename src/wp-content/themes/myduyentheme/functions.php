@@ -1,4 +1,23 @@
 <?php
+
+/**
+ * Theme functions and definitions
+ *
+ * @author nhaxemyduyen
+ */
+
+ /**
+@Thiet lap chieu rong noi dung
+  */
+  if ( !isset($content_width)){
+    $content_width = 620;
+  }
+
+$theme_version = ( wp_get_theme()->get( 'Version' ) ) ?: false;
+$theme_author  = ( wp_get_theme()->get( 'Author' ) ) ?: 'nhaxemyduyen';
+$theme_uri     = ( wp_get_theme()->get( 'ThemeURI' ) ) ?: 'https://nhaxemyduyen.vn';
+$text_domain   = ( wp_get_theme()->get( 'TextDomain' ) ) ?: 'myduyen';
+
 // Đăng ký menu chính
 function myduyentheme_register_menus() {
     register_nav_menus(
@@ -30,8 +49,7 @@ function myduyentheme_widgets_init() {
     );
 }
 add_action('widgets_init', 'myduyentheme_widgets_init');
-?>
-<?php
+
 // Nạp các tài nguyên cần thiết, bao gồm file CSS
 function myduyentheme_enqueue_styles() {
     // Nạp style.css    
@@ -51,5 +69,6 @@ function add_custom_image_path() {
 
 add_action('wp_enqueue_scripts', 'add_custom_image_path');
 
-?>
+
+
 

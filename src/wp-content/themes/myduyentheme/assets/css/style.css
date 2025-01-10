@@ -306,7 +306,7 @@ header {
 }
 /* Style cho banner */
 .page-banner {
-    background-image: url('/html/assets/img/banner2.png');
+    background-image: url('/src/wp-content/themes/myduyentheme/assets/img/banner2.png');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -316,7 +316,6 @@ header {
     justify-content: center;
     padding-left: 100px;
 }
-
 
 .page-banner::before {
     content: '';

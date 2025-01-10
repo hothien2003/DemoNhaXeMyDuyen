@@ -85,7 +85,9 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-const WP_DEBUG =true;
+const WP_DEBUG =false;
+const WP_DEBUG_LOG = true;
+const WP_DEBUG_DISPLAY = false;
 // const WP_DEBUG_LOG = true;
 // const WP_DEBUG_DISPLAY = false;
 /* Add any custom values between this line and the "stop editing" line. */

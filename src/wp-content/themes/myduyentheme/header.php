@@ -1,17 +1,35 @@
+<?php
+/**
+ * The template for displaying the header
+ * This is the template that displays all the <head> section, opens the <body> tag and adds the site's header.
+ *
+ * @package nhaxemyduyen
+ */
+
+\defined( 'ABSPATH' ) || die;
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> class="no-js">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name'); ?></title>
-    <?php wp_head(); ?> <!-- Chèn các tài nguyên được nạp, bao gồm CSS -->
+	<?php
+
+	/**
+     * Head
+     *
+	 * @see __wp_head - 1
+     * @see __external_fonts - 10
+	 */
+        wp_head(); ?> <!-- Chèn các tài nguyên được nạp, bao gồm CSS -->
 </head>
-<body>
+<body <?php body_class(); ?>>
 <header>
         <div class="header-top">
             <div class="container">
                 <a href="/index.html" class="logo">
-                    <img src="/html/assets/img/logo.png" alt="Mỹ Duyên Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/html/assets/img/logo.png" alt="Mỹ Duyên Logo">
                 </a>
                 <div class="header-right">
                     <div class="number-contact-info">
@@ -59,3 +77,10 @@
     </header>
 </body>
 </html>
+
+<?php
+wp_nav_menu(array(
+    'theme_location' => 'primary',
+    'menu_class' => 'nav-menu',
+));
+?>

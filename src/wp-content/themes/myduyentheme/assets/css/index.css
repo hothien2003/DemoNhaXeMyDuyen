@@ -183,7 +183,7 @@
 
         /* Hero Section */
         .hero {
-            background-image: url('/html/assets/img/banner1.png');
+            background-image: url('/src/wp-content/themes/myduyentheme/assets/img/banner1.png');
             background-size: cover;
             padding: 350px 0;
             position: relative;

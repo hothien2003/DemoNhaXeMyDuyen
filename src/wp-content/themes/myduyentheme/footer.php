@@ -1,3 +1,15 @@
+<?php
+/**
+ * The template for displaying the footer.
+ * Contains the body & html closing tags.
+ *
+ * @package nhaxemyduyen
+ */
+
+\defined( 'ABSPATH' ) || die;
+
+?>
+
 <footer>
         <div class="container">
             <div class="footer-content">
@@ -87,3 +99,6 @@
             </div>
         </div>
     </footer>
+<?php wp_footer() ?>
+</body>
+</html>
