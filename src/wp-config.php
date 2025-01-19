@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'x2~@a|d2|tzvi.cpFP`@W8{JX]f#hw^c:jm;yVyUQ#[k(2Ch_rezwbxh^H8F#p8k' );
-define( 'SECURE_AUTH_KEY',  'EY8U5j`S;D.|U#`4O`K&)[hO%>?}@e=^V;~vJ[=S19F.,3nm1dY/Z1!<ykrrIZpX' );
-define( 'LOGGED_IN_KEY',    '0ceMJ6 BE*6e4vue[wh/>/H-Jk*G[,jyCQv0X7i[i#.I)S=1CUj?jV8Jzl_U8C5K' );
-define( 'NONCE_KEY',        '_}^7,|oGuACW)b5g/I6:8;:v[V4;$^x!a&mbt<_12i0N6(7/NC<aMky|M]LmuwO7' );
-define( 'AUTH_SALT',        'nX@=g%s,kZqK= v;C&*[svrq?n@g2Hml4q7a*=tQO-TvtYjZb|AzSYOH[],1BRCU' );
-define( 'SECURE_AUTH_SALT', '=,Bdnl5j#/[:QBc]h64k_E_%uOx+MK4`Ipjr]Un$%(nFZ4&Mi#,31Em)wQW)VM6)' );
-define( 'LOGGED_IN_SALT',   '4]{fag8<,P!z6p1;y3:~;|i.?}r]eK6OK>&]>c,mMp2>pgI7q-,nw-`c^9Rlmh$[' );
-define( 'NONCE_SALT',       'h GpC?D;0_|i*y8Cp}{} .hu0A<zlT&E[yS &;I:d^EsXKp/gp(=~?S8CI~3sQS3' );
+define( 'AUTH_KEY',         '`f,8|p0jKm@l]mP( J~L*mQvTy|:76PKmy(RSsH!e]jx/*[.A={quU!cES-F{UGr' );
+define( 'SECURE_AUTH_KEY',  'kO.t6Q:R+M|aG}M@(_0;t6N#fLF=`L*y!hnCgHT`;],{dy!pVF`Wq9TRquff[bBY' );
+define( 'LOGGED_IN_KEY',    't:6O5)hYSnK0$Vz0Kvq9jR.[/4`eG_h|^C;g.})mKuz0<E_{7[vXSS/0gNP,PZ2?' );
+define( 'NONCE_KEY',        'F|5R0U07u9n5U+$HTFA8b6G|PGC!tQ:Y=?v&0|0^-Eb/4|G*M{,q0_NzpG3a$.[t' );
+define( 'AUTH_SALT',        's.t{1 5.OZ=&l`^*,j#Nw]?j<v`4-UsliFY}!TAE{2)ij0WpiSbPduXlCz?GpO_p' );
+define( 'SECURE_AUTH_SALT', '<6Z^5M0Nan{TgOPLt6ey8ibi$1v Sk=D^ZkqxL3u$5E=Sfr6Jt6N->}[]p@,X=Ca' );
+define( 'LOGGED_IN_SALT',   '^^t6:LlSI!EEdIy8=G_KIVCbZz/4N2?*_AlkP[kI@c9WwzMe,qDU7bO3};}$-)nG' );
+define( 'NONCE_SALT',       'mHpfmRlR>j}q3yk)bt%9&su(^0<,~i;=U|7J/i}G:Udc$![5GzFXG>|Ck9<{J_-)' );
 
 /**#@-*/
 
@@ -85,14 +85,14 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-const WP_DEBUG =false;
-const WP_DEBUG_LOG = true;
-const WP_DEBUG_DISPLAY = false;
-// const WP_DEBUG_LOG = true;
-// const WP_DEBUG_DISPLAY = false;
+define( 'WP_DEBUG', false );
+
 /* Add any custom values between this line and the "stop editing" line. */
 
 
+if ( ! defined( 'FS_METHOD' ) ) {
+	define( 'FS_METHOD', 'direct' );
+}
 
 /* That's all, stop editing! Happy publishing. */
 
